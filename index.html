@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cajero bancolombia</title>
+    <link rel="stylesheet" href="./cashier.css">
+
+    <style>
+    body {
+        background-color: round-color;
+        color: white;  
+        font-family: helvetica;
+    }
+    strong{
+        background-color: white;
+    }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Cajero bancolombia</h1>
+    </center>
+    <div>
+        <center><img src="cashier_bancolombia.png" width="100" height="100" /></center>
+
+        <br>
+
+
+        <center>
+            <onclick>
+                <input type="number" id="money" height="100" width="100" />
+                <input type="button" value="Retirar" id="Retirar" height="300" width="300" />
+                <br>
+                <br>
+                <button onclick='Presionar("Boton","1")'> 1 </button>
+                <button onclick='Presionar("Boton","2")'> 2 </button>
+                <button onclick='Presionar("Boton","3")'> 3 </button>
+                <br>
+                <button onclick='Presionar("Boton","4")'> 4 </button>
+                <button onclick='Presionar("Boton","5")'> 5 </button>
+                <button onclick='Presionar("Boton","6")'> 6 </button>
+                <br>
+                <button onclick='Presionar("Boton","7")'> 7 </button>
+                <button onclick='Presionar("Boton","8")'> 8 </button>
+                <button onclick='Presionar("Boton","9")'> 9 </button>
+                <br>
+                <button onclick='Presionar("Boton","<")'> < </button>
+                <button onclick='Presionar("Boton","0")'> 0 </button>
+                <button onclick='Presionar("Boton",">")'> > </button>
+            </onclick>
+        </center>
+
+
+    </div>
+    <p>
+
+    </p>
+    <p id="result"></p>
+
+    <script src="cashier.js">
+        //var number = document.getElementById("1");
+        //var button = document.getElementById("Button");
+        //button.addEventListener("onclick", Buttononclick);
+
+        getButton: presionar
+
+        function presionar(button) {
+
+            return this.button + '' + this;
+        }
+        Presionar("Button", "1")
+        Presionar("Button", "2")
+        Presionar("Button", "3")
+        Presionar("Button", "4")
+        Presionar("Button", "5")
+        Presionar("Button", "6")
+        Presionar("Button", "7")
+        Presionar("Button", "8")
+        Presionar("Button", "9")
+        Presionar("Button", "0")
+    </script>
+</body>
+
+</html>
